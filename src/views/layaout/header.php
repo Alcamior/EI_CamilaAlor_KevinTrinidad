@@ -1,4 +1,7 @@
-<?php include '../config/variables.php' ?>
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . '/EI_CamilaAlor_KevinTrinidad/config/variables.php';
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">

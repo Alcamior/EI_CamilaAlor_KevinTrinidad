@@ -4,7 +4,7 @@
     <nav class="d-flex justify-content-between align-items-center w-100">
         <p class="text-center m-0 w-50">Barbería</p>
         <ul class="list-unstyled d-flex justify-content-around align-items-center m-0 w-50">
-            <li><a href="#">Iniciar sesión</a></li>
+            <li><a href="../src/views/login/login.php">Iniciar sesión</a></li>
             <li><a href="#">Consultar servicios</a></li>
             <li><a href="#">Registrarse</a></li>
         </ul>
