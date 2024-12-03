@@ -25,6 +25,8 @@
                     <br>     
                     <div class="form_container">            
                         <button type="button" class="formulario_btn btn btn-light">Enviar</button> 
+                        <br><br>
+                        <button class="btn btn-info"><a href="../../../public/index.php">Regresar</a></button>
                     </div> 
                 </form>  
             </section>

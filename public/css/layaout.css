@@ -57,3 +57,19 @@ main .principal section p{
 button, input{
     width: 100%;
 }
+
+.btn-info a{
+    text-decoration: none;
+    color:white;
+}
+.btn-info a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .imagen {
+        display: none;
+    }
+}
