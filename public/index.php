@@ -6,7 +6,7 @@
         <ul class="list-unstyled d-flex justify-content-around align-items-center m-0 w-50">
             <li><a href="../src/views/login/login.php">Iniciar sesión</a></li>
             <li><a href="#">Consultar servicios</a></li>
-            <li><a href="#">Registrarse</a></li>
+            <li><a href="../src/views/login/sign-up.php">Registrarse</a></li>
         </ul>
     </nav>
 

@@ -7,9 +7,9 @@
             </div>
             <section>
                 <header>
-                    <h1>App Peluqueria</h1>
+                    <h1>Barbershop</h1>
                 </header> 
-                <H2>Autentificación</H2>
+                <H2>Ingresa con tus datos</H2>
                 <form method="POST" name="frm1" id="frm1" action="">
                     <div class="form_container">
                         <label for="usuario" class="formulario_label">Usuario:</label> 
