@@ -1,7 +1,7 @@
 <?php include '../layaout/header.php' ?>
 
 
-<form action="../../controllers/UsuarioController/create.php" name="frmReg" id="frmReg" method="POST">
+<form action="<?=asset_general('src/controllers/UsuarioController/create.php')?>" name="frmReg" id="frmReg" method="POST">
 
     <div class="form_container">
         <label class="formulario_label">Nombre de usuario:</label>
