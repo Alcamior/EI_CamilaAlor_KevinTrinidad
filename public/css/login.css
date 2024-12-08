@@ -1,0 +1,57 @@
+
+.principal {
+    background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
+    background-repeat: no-repeat;
+}
+
+.principal .formulario {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 60px 40px;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.principal .formulario header h1, .principal h2{
+    font-family: "Parkinsans", sans-serif;
+}
+
+.principal .formulario header a{
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.principal .formulario header a:hover{
+    font-size: 50px;
+}
+
+.principal .formulario form .form_container {
+    font-family: "Inter", serif;
+} 
+
+.principal .formulario form .form_container label{
+    font-weight: bold;
+} 
+
+.principal .formulario form .form_container input{
+    border: none;
+    border-radius: 1rem;
+    padding: 10px;
+} 
+
+.principal .formulario form .form_container p{
+    width: 50%;
+    margin-top: 10px;
+} 
+
+.principal .formulario form .form_container .formulario_btn {
+    background-color: rgb(255, 171, 185);
+    padding: 8px 40px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+}
