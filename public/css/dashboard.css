@@ -1,0 +1,77 @@
+
+/*-----------------------> Header */
+
+header {
+    background-color: black;
+    color: white;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header a i {
+    font-size: 30px;
+    color: white;
+}
+
+
+/*-----------------------> Dashboard */
+
+.dashboard {
+    background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .imagen h3{
+    text-align: center;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard .carta {
+    background-color: white;
+    border: 1.5px solid black;
+    margin: 20px 30px;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.dashboard .carta h3{
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+}
+
+.dashboard .carta p{
+    font-family: "Inter", serif;
+}
+
+.dashboard .carta .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard .carta .botones a{
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 1.5rem;
+    color: rgb(255, 171, 185);
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 14px;
+}

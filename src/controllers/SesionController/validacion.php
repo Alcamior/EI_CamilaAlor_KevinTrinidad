@@ -1,4 +1,5 @@
 <?php include '../../../config/db_connection.php' ?>
+<?php include '../../../config/variables.php' ?>
 
 <?php
     session_start();
@@ -15,14 +16,14 @@
         $_SESSION['usuario'] = $correo;
 
         if($filas['categoria'] == 'Admin') {
-            header("Location: admin.php");
+            header("Location:" . asset_general("src/views/dashboard/dashboardAdmin.php"));
         } elseif($filas['categoria'] == 'Usuario') {
-            header("Location: user.php");
+            header("Location:" . asset_general("src/views/dashboard/dashboardUser.php"));
         } else {
             echo "Error";
         }
     } else {
-        header("Location: login.php?error=login_fallido");
+        header("Location:" . asset_general("src/views/login/login.php"));
     }
     
     mysqli_free_result($resultado);
