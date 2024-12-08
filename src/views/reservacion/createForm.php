@@ -11,7 +11,7 @@
 ?>
 
         <header class="row">
-            <a class="col-md-4 col-sm-12" href="javascript:history.back()"><i class="bi bi-arrow-left-circle"></i></a>
+            <a class="col-md-4 col-sm-12" href="<?=asset_general('src/views/dashboard/dashboardUser.php')?>"><i class="bi bi-arrow-left-circle"></i></a>
             <h2 class="col-md-8 col-sm-12">Regresar</h2>
         </header>
 
