@@ -77,4 +77,4 @@
 
 <script src="<?=asset('js/validarCredencial.js') ?>"></script>
 
-
+<?php include '../layaout/footer.php' ?>

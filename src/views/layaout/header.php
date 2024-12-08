@@ -20,6 +20,8 @@
         }
         if($page === 'login') {
             echo '<link rel="stylesheet" href="' . asset('css/login.css') . '">';
+        }elseif($page === 'dashboardAdmin') {
+            echo '<link rel="stylesheet" href="' . asset('css/dashboard.css') . '">';
         }
     ?>
 
