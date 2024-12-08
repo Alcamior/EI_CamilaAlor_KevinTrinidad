@@ -17,7 +17,8 @@
     <?php 
         if ($page === 'index') {
             echo '<link rel="stylesheet" href="' . asset('css/index.css') . '">';
-        }elseif($page === 'login') {
+        }
+        if($page === 'login') {
             echo '<link rel="stylesheet" href="' . asset('css/login.css') . '">';
         }
     ?>
