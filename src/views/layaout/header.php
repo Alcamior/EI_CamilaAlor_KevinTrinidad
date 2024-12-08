@@ -17,7 +17,7 @@
     <?php 
         if ($page === 'index') {
             echo '<link rel="stylesheet" href="' . asset('css/index.css') . '">';
-        }elseif($page === 'login') {
+        }elseif($page === 'login' || $page === 'sign-up') {
             echo '<link rel="stylesheet" href="' . asset('css/login.css') . '">';
         }elseif($page === 'dashboardAdmin') {
             echo '<link rel="stylesheet" href="' . asset('css/dashboard.css') . '">';
