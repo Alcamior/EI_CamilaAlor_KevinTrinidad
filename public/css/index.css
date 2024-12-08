@@ -1,0 +1,247 @@
+
+/*-----------------------> Primera parte */
+.principal {
+    background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
+    background-repeat: no-repeat;
+}
+
+
+/*-----------------------> Barra superior */
+.principal nav {
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+}
+
+.principal nav .container-fluid {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.principal nav .container-fluid .navbar-toggler{
+    background-color: white;
+}
+
+.principal nav .container-fluid .navbar-brand {
+    padding-left: 100px;
+    color: white;
+    font-size: 35px;
+}
+
+.principal nav .container-fluid #navbarNav {
+    padding-right: 50px;
+}
+
+.principal nav .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.principal nav .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    text-decoration: none;
+    color:black;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+
+/*-----------------------> Main */
+
+.principal main .row .texto-der {
+    font-family: "Inter", serif;
+    padding: 0 100px;
+    color: white;
+}
+
+.principal main .row .texto-der {
+    padding: 0 100px;
+    color: white;
+}
+
+.principal main .row .texto-der header h1{
+    font-family: "Parkinsans", sans-serif;
+    font-size:45px;
+    font-weight: bold;
+}
+
+.principal main .row .texto-der article p{
+    font-size: 22px;
+}
+
+
+/*-----------------------> Servicios */
+
+.servicios {
+    margin-top: 40px;
+}
+
+.servicios h2{
+    font-family: "Parkinsans", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(255, 171, 185);
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.servicios .row {
+    margin-top: 25px;
+}
+
+.servicios .row .servicio .imagen {
+    width: 75%;
+    margin: 0 auto; 
+}
+
+.servicios .row .servicio .imagen img {
+    width: 100%; 
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+.servicios .row .servicio .info {
+    font-family: "Inter", serif;
+    width: 75%;
+    margin: 10px auto; 
+    display: flex;
+    align-items: center;
+}
+
+.servicios .row .servicio .info .descripcion{
+    width: 65%;
+}
+
+.servicios .row .servicio .info .descripcion h5{
+    font-weight: bold;
+}
+
+.servicios .row .servicio .info .descripcion p{
+    color: gray;
+}
+
+.servicios .row .servicio .info .precio{
+    width: 35%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.servicios .row .servicio .precio span{
+    background-color: rgb(255, 171, 185);
+    color: white;
+    border-radius: 1.5rem;
+    padding: 8px;
+}
+
+
+/*-----------------------> Horarios */
+
+.horarios {
+    background-color: rgb(255, 228, 178);
+}
+
+.horarios .info-horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    text-align: center; 
+}
+
+.horarios .info-horario h2 {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.horarios .info-horario p {
+    font-weight: bold;
+    font-family: "Inter", serif;
+    font-weight: bold;
+    font-size: 26px;
+    background-color: rgb(255, 171, 185);
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.horarios .info-horario h5 {
+    font-weight: bold;
+    font-family: "Inter", serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.horarios .info-horario i {
+    font-size: 45px;
+}
+
+.horarios .img-horario img {
+    width: 100%; 
+    height: auto;
+}
+
+
+/*-----------------------> Otros sitios de interés */
+
+.otros-sitios {
+    margin-bottom: 50px;
+}
+
+.otros-sitios h2 {
+    font-family: "Parkinsans", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(255, 171, 185);
+    text-align: center;
+    margin: 40px;
+}
+
+.otros-sitios .carousel {
+    max-width: 500px; 
+    margin: 0 auto;   
+}
+
+.otros-sitios .carousel .carousel-inner .carousel-item img {
+    border-radius: 50%;
+}
+
+.otros-sitios .carousel .carousel-inner .carousel-item .carousel-caption h5{
+    color: black;
+    font-weight: bolder;
+}
+
+.otros-sitios .carousel .carousel-inner .carousel-item .carousel-caption p a{
+    color: black;
+    text-decoration: none;
+    background-color: rgb(255, 171, 185);
+    padding: 5px;
+    border-radius: 1rem;
+    margin-top: 10px;
+}
+
+
+/*-----------------------> Contacto */
+
+.contacto {
+    margin-top: 60px;
+    background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.contacto .col-md-4 {
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.contacto .col-md-4 i{
+    font-size: 30px;
+}
