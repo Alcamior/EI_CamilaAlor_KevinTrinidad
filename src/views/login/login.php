@@ -15,7 +15,7 @@
                 
                 <br>
                 
-                <form method="POST" name="frmLogIn" id="frmLogIn" action="<?=asset_general('src/controllers/LoginController/validacion.php')?>">
+                <form method="POST" name="frmLogIn" id="frmLogIn" action="<?=asset_general('src/controllers/SesionController/validacion.php')?>">
                     <div class="form_container">
                         <label for="correo" class="formulario_label">Correo</label> 
                         <br>
