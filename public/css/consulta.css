@@ -1,0 +1,73 @@
+/*-----------------------> Header */
+
+header {
+    background-color: black;
+    color: white;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header a i {
+    font-size: 30px;
+    color: white;
+    padding-left: 10rem;
+    transition: 0.3s;
+}
+
+header a i:hover {
+    font-size: 40px;
+}
+
+
+/*-----------------------> Tabla */
+
+.tabla {
+    background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.tabla h3 {
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.tabla .table {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+
+/*-----------------------> Contacto */
+
+.contacto {
+    margin-top: 60px;
+    background: black;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.contacto .col-md-4 {
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.contacto .col-md-4 i{
+    font-size: 30px;
+}
+
+
