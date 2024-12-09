@@ -19,7 +19,7 @@
                             <a class="nav-link" href="<?=asset_general('src/views/login/login.php')?>">Inicia sesión</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Consultar servicios</a>
+                            <a class="nav-link" href="<?=asset_general('src/views/servicio/consultaUser.php')?>">Consultar servicios</a>
                         </li>
                     </ul>
                 </div>
@@ -201,19 +201,19 @@
     </section>
 
     <section class="contacto row">
-    <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center">
-        <h5>BarberShop México</h5>
-    </div>
+        <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center">
+            <h5>BarberShop México</h5>
+        </div>
 
-    <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
-        <i class="bi bi-telephone"></i>
-        <p class="mb-0">777-408-1082</p>
-    </div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+            <i class="bi bi-telephone"></i>
+            <p class="mb-0">777-408-1082</p>
+        </div>
 
-    <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
-        <i class="bi bi-envelope-at"></i>
-        <p class="mb-0">barbershop@gmail.com</p>
-    </div>
-</section>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
+            <i class="bi bi-envelope-at"></i>
+            <p class="mb-0">barbershop@gmail.com</p>
+        </div>
+    </section>
 
 <?php include '../src/views/layaout/footer.php' ?>

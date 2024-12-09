@@ -17,11 +17,14 @@
     <?php 
         if ($page === 'index') {
             echo '<link rel="stylesheet" href="' . asset('css/index.css') . '">';
-        }
-        if($page === 'login') {
+        }elseif($page === 'login' || $page === 'sign-up') {
             echo '<link rel="stylesheet" href="' . asset('css/login.css') . '">';
-        }elseif($page === 'dashboardAdmin') {
+        }elseif($page === 'dashboardAdmin' || $page === 'dashboardUser') {
             echo '<link rel="stylesheet" href="' . asset('css/dashboard.css') . '">';
+        }elseif($page === 'createForm') {
+            echo '<link rel="stylesheet" href="' . asset('css/formulario.css') . '">';
+        }elseif($page === 'consultaUser') {
+            echo '<link rel="stylesheet" href="' . asset('css/consulta.css') . '">';
         }
     ?>
 
