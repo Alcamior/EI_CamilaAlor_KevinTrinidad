@@ -26,12 +26,16 @@ header a i {
 
 /*-----------------------> Dashboard */
 
+body{
+    min-height: 100vh;
+}
+
 .dashboard {
     background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .dashboard .imagen h3{
