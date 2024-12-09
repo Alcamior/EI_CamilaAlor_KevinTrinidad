@@ -20,7 +20,7 @@
                         ¡Ve el catálogo de servicios y horarios disponibles!
                     </p>
                     <div class="botones">
-                        <a href="">Ver servicios disponibles</a>
+                        <a href="<?=asset_general('src/views/servicio/consulta.php')?>">Ver servicios disponibles</a>
                     </div>
                 </div>
 
