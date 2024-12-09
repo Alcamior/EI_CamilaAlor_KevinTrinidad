@@ -1,7 +1,8 @@
 <?php include '../layaout/header.php' ?>
 <?php include '../../controllers/RolesController/roles.php'?>
 
-<?php session_start(); 
+<?php 
+    session_start(); 
     $usuario = $_SESSION['usuario'];
 
     $query = "SELECT * FROM servicios;";
@@ -19,7 +20,7 @@
             <div class="formulario col-md-6 col-sm-12">
                 <h6>Registra una nueva cita</h6>
 
-                <form method="POST" name="frmRes" id="frmRes" action="validacionReservacion.php">
+                <form method="POST" name="frmRes" id="frmRes" action="<?=asset_general('src/controllers/ReservacionController/create.php') ?>">
 
                     <div class="form_container">
                         <label class="formulario_label">Fecha de la reservación</label>
@@ -64,6 +65,15 @@
                         <button type="button" class="formulario_btn" onclick="validacion();">Enviar</button>                    
                     </div>       
                 </form>
+
+                <br>
+                
+                <?php
+                    if (isset($_SESSION['error'])) {
+                        echo '<div class="alert alert-danger">' . $_SESSION['error'] . '</div>';
+                        unset($_SESSION['error']); 
+                    }
+                ?>
             </div>
 
             <div class="imagen col-md-6 col-sm-12">
@@ -74,6 +84,7 @@
         <script src="<?=asset('js/validarReserv.js')?>"></script>  
       
 <?php
+
     }else{
         header('Location: login.php');
     }
