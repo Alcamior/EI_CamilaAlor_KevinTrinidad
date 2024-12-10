@@ -36,13 +36,35 @@
 
                 $execute = mysqli_query($con, $sql);
 
+                //Para insertar en notareservacion
+                $queryTotal = "select sum(total) as total from notareservacion where idU = '$idU';";                
+                $execute = mysqli_query($con, $queryTotal);
+                $rowTot = mysqli_fetch_assoc($execute);
+                $total = $rowTot['total'];
+
+                $queryPreSer = "select precio from servicios where idS = '$idS';";
+                $execute = mysqli_query($con, $queryPreSer);
+                $rowPre = mysqli_fetch_assoc($execute);
+                $precio = $rowPre['precio'];
+
+                if ($rowTot['total'] === NULL) {
+                    $queryInsTot = "insert into notareservacion values
+                    (0, '$precio', $idU)";
+                } else {
+                    $queryInsTot = "update notareservacion
+                    set total = total + '$precio'
+                    where idU = $idU;";
+                }
+                
+                $execute = mysqli_query($con, $queryInsTot);
+
                 sleep(2);
-                header('Location: ' . asset_general("src/views/reservacion/createForm.php"));
+                header('Location: ' . asset_general("src/views/reservacion/createFormUser.php"));
 
             }catch (mysqli_sql_exception $e) {
                 $_SESSION['error'] = "Error: " . $e->getMessage();
                 sleep(3);
-                header('Location: ' . asset_general("src/views/reservacion/createForm.php"));
+                header('Location: ' . asset_general("src/views/reservacion/createFormUser.php"));
                 exit();
             }
 

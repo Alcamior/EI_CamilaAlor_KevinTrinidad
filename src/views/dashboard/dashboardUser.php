@@ -31,7 +31,8 @@
                         ¡Haz una reservación ahora!
                     </p>
                     <div class="botones">
-                        <a href="<?=asset_general('src/views/reservacion/createForm.php')?>">Hacer una nueva reservación</a>
+                        <a href="<?=asset_general('src/views/reservacion/createFormUser.php')?>">Hacer una nueva reservación</a>
+                        <a href="<?=asset_general('')?>">Ver mis citas</a>
                     </div>
                 </div>
             </div>
