@@ -40,6 +40,16 @@
                         <a href="<?=asset_general('src/views/consultaHorario/consultaForm.php')?>">Ver horarios disponibles</a>
                     </div>
                 </div>
+
+                <div class="carta">
+                    <h3>Ganancias diarias</h3>
+                    <p>
+                        Consulta las ganacias del días que desees.
+                    </p>
+                    <div class="botones">
+                        <a href="<?=asset_general('src/views/ganancias/consultaForm.php')?>">Ver ganancias diarias</a>
+                    </div>
+                </div>
             </div>
 
             <div class="imagen col-md-4 col-sm-12">
