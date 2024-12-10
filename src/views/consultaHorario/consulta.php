@@ -52,7 +52,7 @@
 
                     while ($rows = $result->fetch_assoc()) {
                         $horaInicio = $rows['hora'];
-                        $horaFin = date("H:i", strtotime($horaInicio) + 3600);
+                        $horaFin = date("H:i:s", strtotime($horaInicio) + 3600);
                     ?>
                         <tr>
                             <td><?php echo htmlspecialchars($horaInicio); ?></td>
