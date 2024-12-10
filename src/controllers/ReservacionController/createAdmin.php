@@ -55,7 +55,7 @@
                 $execute = mysqli_query($con, $queryInsTot);
 
                 sleep(2);
-                header('Location: ' . asset_general("src/views/reservacion/createFormAdmin.php"));
+                header('Location: ' . asset_general("src/views/reservacion/consultaAdmin.php"));
 
             }catch (mysqli_sql_exception $e) {
                 $_SESSION['error'] = "Error: " . $e->getMessage();
