@@ -20,7 +20,7 @@
 
             //Eliminar lógicamente
             $sql = "update reservaciones 
-            set estatus = 3
+            set estatus = 3, horaIni = 0, horaFin = 0
             where id = $id;";
             $execute = mysqli_query($con, $sql);
 
