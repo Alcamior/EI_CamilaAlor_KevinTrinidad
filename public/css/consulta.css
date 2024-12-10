@@ -59,6 +59,11 @@ header a i:hover {
     font-size: 22px;
 }
 
+.tabla table a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /*-----------------------> Formulario */
 
