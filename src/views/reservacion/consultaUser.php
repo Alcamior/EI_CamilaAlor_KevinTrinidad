@@ -25,6 +25,7 @@
                     <th>Fecha</th>
                     <th>Hora de inicio</th>
                     <th>Hora de fin</th>
+                    <th>Estatus</th>
                 </tr>
             </thead>
             <?php
@@ -33,7 +34,8 @@
                 $rowIdU = mysqli_fetch_assoc($reIdU);
                 $idU = $rowIdU['idU'];
 
-                $sql = "select servicios.nombre as nombre, precio, fecha, horaIni, horaFin from servicios
+                $sql = "select servicios.nombre as nombre, precio, fecha, horaIni, horaFin,
+                estatus from servicios
                 inner join reservaciones on servicios.idS = reservaciones.idS
                 inner join usuarios on reservaciones.idU = usuarios.idU
                 where reservaciones.idU = '$idU';";
@@ -47,6 +49,7 @@
                         <td><?php echo $rows['fecha']; ?></td>
                         <td><?php echo $rows['horaIni']; ?></td>
                         <td><?php echo $rows['horaFin']; ?></td>
+                        <td><?php echo $rows['estatus']; ?></td>
                     </tr>            
             <?php
                 }
