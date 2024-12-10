@@ -64,6 +64,49 @@
         </table>
     </section>
 
+    <section class="tabla">
+        
+        <h3>Reservaciones activas</h3>
+
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre del cliente</th>
+                    <th>Servicio</th>
+                    <th>Costo</th>
+                    <th>Fecha</th>
+                    <th>Hora de inicio</th>
+                    <th>Hora de fin</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <?php
+
+                $sql = "select concat(usuarios.nombre,' ',usuarios.apellido) as nombreCom, 
+                servicios.nombre as servicio, precio, fecha, horaIni, horaFin,
+                estatus from servicios
+                inner join reservaciones on servicios.idS = reservaciones.idS
+                inner join usuarios on reservaciones.idU = usuarios.idU
+                where estatus = 1;";
+                $exec = mysqli_query($con, $sql);
+                
+                while($rows = mysqli_fetch_array($exec)){
+            ?>
+                    <tr>
+                        <td><?php echo $rows['nombreCom']; ?></td>
+                        <td><?php echo $rows['servicio']; ?></td>
+                        <td><?php echo $rows['precio']; ?></td>
+                        <td><?php echo $rows['fecha']; ?></td>
+                        <td><?php echo $rows['horaIni']; ?></td>
+                        <td><?php echo $rows['horaFin']; ?></td>
+                        <td><?php echo $rows['estatus']; ?></td>
+                    </tr>            
+            <?php
+                }
+            ?>
+        </table>
+    </section>
+
     <section class="contacto row">
         <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center">
             <h5>BarberShop México</h5>
