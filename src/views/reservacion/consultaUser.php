@@ -82,7 +82,7 @@
 <?php
 
     }else{
-        header('Location: login.php');
+        header('Location: ' . asset_general("src/views/login/login.php"));
     }
 ?>
 

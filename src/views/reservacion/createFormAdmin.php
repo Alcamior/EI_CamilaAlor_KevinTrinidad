@@ -6,13 +6,16 @@
     $usuario = $_SESSION['usuario'];
 
     $query = "SELECT * FROM servicios;";
-    $articulos = $con->query($query);   
+    $articulos = $con->query($query);
 
-    if (esUser($usuario)){
+    $queryU = "SELECT * FROM usuarios where categoria = 2;";
+    $usuarios = $con->query($queryU);      
+
+    if (esAdmin($usuario)){
 ?>
 
         <header class="row">
-            <a class="col-md-4 col-sm-12" href="<?=asset_general('src/views/dashboard/dashboardUser.php')?>"><i class="bi bi-arrow-left-circle"></i></a>
+            <a class="col-md-4 col-sm-12" href="<?=asset_general('src/views/dashboard/dashboardAdmin.php')?>"><i class="bi bi-arrow-left-circle"></i></a>
             <h2 class="col-md-8 col-sm-12">Regresar</h2>
         </header>
 
@@ -21,6 +24,20 @@
                 <h6>Registra una nueva cita</h6>
 
                 <form method="POST" name="frmRes" id="frmRes" action="<?=asset_general('src/controllers/ReservacionController/createAdmin.php') ?>">
+
+                    <div class="form_container">
+                        <label class="formulario_label">Elige el cliente</label>
+                        <br>
+                        <select name="cliente" id="cliente">
+                            <?php
+                                foreach ($usuarios as $usuario) {
+                                    echo "<option value=\"{$usuario['idU']}\">{$usuario['nombre']} {$usuario['apellido']}</option>";
+                                }
+                            ?>
+                        </select>
+                    </div>     
+                
+                    <br>
 
                     <div class="form_container">
                         <label class="formulario_label">Fecha de la reservación</label>

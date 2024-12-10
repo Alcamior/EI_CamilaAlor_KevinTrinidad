@@ -7,7 +7,7 @@
 
     $usuario = $_SESSION['usuario'];
     
-    if(esUser($usuario)){
+    if(esAdmin($usuario)){
 
         $usuario = $_SESSION['usuario'];
 
@@ -19,13 +19,9 @@
                 $fecha = $_POST['fecha'];
                 $hora = $_POST['horaIni'];
                 $servicio = $_POST['servicio'];
+                $idU = $_POST['cliente'];
 
-                // Seleccionar id el usuario y el servicio a insertar
-                $queryIdU = "select idU from usuarios where correo = '$usuario';";
-                $reIdU = mysqli_query($con, $queryIdU);
-                $rowIdU = mysqli_fetch_assoc($reIdU);
-                $idU = $rowIdU['idU'];
-
+                // Seleccionar id del servicio a insertar
                 $queryIdS = "select idS from servicios where nombre = '$servicio';";
                 $reIdS = mysqli_query($con, $queryIdS);
                 $rowIdS = mysqli_fetch_assoc($reIdS);
@@ -59,12 +55,12 @@
                 $execute = mysqli_query($con, $queryInsTot);
 
                 sleep(2);
-                header('Location: ' . asset_general("src/views/reservacion/consultaUser.php"));
+                header('Location: ' . asset_general("src/views/reservacion/createFormAdmin.php"));
 
             }catch (mysqli_sql_exception $e) {
                 $_SESSION['error'] = "Error: " . $e->getMessage();
                 sleep(3);
-                header('Location: ' . asset_general("src/views/reservacion/createFormUser.php"));
+                header('Location: ' . asset_general("src/views/reservacion/createFormAdmin.php"));
                 exit();
             }
 
