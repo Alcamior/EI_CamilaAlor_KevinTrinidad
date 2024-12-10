@@ -50,7 +50,12 @@
                         <td><?php echo $rows['horaIni']; ?></td>
                         <td><?php echo $rows['horaFin']; ?></td>
                         <td><?php echo $rows['estatus']; ?></td>
-                        <td><a href=""><i class="bi bi-arrow-clockwise"></i></a></td>
+
+                        <td>
+                            <a href="editForm.php?id=<?php echo $rows['id'];?>">
+                            <i class="bi bi-arrow-clockwise"></i></a>
+                        </td>
+
                         <td>
                             <a href="<?php echo asset_general('src/controllers/ReservacionController/delete.php
                                 ?id=' . $rows['id'] . '&idU=' . $rows['idU'] . '&precio=' . $rows['precio']); ?>">
