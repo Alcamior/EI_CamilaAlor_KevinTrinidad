@@ -22,7 +22,7 @@
                         del negocio.
                     </p>
                     <div class="botones">
-                        <a href="">Registrar un nuevo servicio</a>
+                        <a href="<?=asset_general('src/views/servicio/createForm.php')?>">Registrar un nuevo servicio</a>
                         <a href="">Ver servicios disponibles</a>
                     </div>
                 </div>

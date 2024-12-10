@@ -30,6 +30,10 @@ header a i:hover {
 
 /*-----------------------> Formulario */
 
+body{
+    min-height: 100vh;
+}
+
 main {
     background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
     background-repeat: no-repeat;
@@ -37,6 +41,7 @@ main {
     display: flex; 
     justify-content: center; 
     align-items: center;
+    min-height: 100vh;
 }
 
 main .formulario {
