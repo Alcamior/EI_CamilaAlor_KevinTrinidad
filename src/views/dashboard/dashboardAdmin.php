@@ -37,6 +37,7 @@
                     <div class="botones">
                         <a href="<?=asset_general('src/views/reservacion/createForm.php')?>">Hacer una nueva reservación</a>
                         <a href="">Ver reservaciones</a>
+                        <a href="<?=asset_general('src/views/consultaHorario/consultaForm.php')?>">Ver horarios disponibles</a>
                     </div>
                 </div>
             </div>

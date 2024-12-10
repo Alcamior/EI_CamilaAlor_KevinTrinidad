@@ -23,7 +23,7 @@
             echo '<link rel="stylesheet" href="' . asset('css/dashboard.css') . '">';
         }elseif($page === 'createForm') {
             echo '<link rel="stylesheet" href="' . asset('css/formulario.css') . '">';
-        }elseif($page === 'consultaUser') {
+        }elseif($page === 'consultaUser' || $page === 'consultaForm' || $page == 'consulta') {
             echo '<link rel="stylesheet" href="' . asset('css/consulta.css') . '">';
         }
     ?>
