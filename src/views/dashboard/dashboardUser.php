@@ -21,7 +21,7 @@
                     </p>
                     <div class="botones">
                         <a href="<?=asset_general('src/views/servicio/consultaUser.php')?>">Ver servicios disponibles</a>
-                        <a href="<?=asset_general('')?>">Ver horarios disponibes</a>
+                        <a href="<?=asset_general('src/views/consultaHorario/consultaForm.php')?>">Ver horarios disponibes</a>
                     </div>
                 </div>
 
@@ -31,8 +31,8 @@
                         ¡Haz una reservación ahora!
                     </p>
                     <div class="botones">
-                        <a href="<?=asset_general('src/views/reservacion/createForm.php')?>">Hacer una nueva reservación</a>
-                        <a href="">Ver mis reservaciones</a>
+                        <a href="<?=asset_general('src/views/reservacion/createFormUser.php')?>">Hacer una nueva reservación</a>
+                        <a href="<?=asset_general('src/views/reservacion/consultaUser.php')?>">Ver mis citas</a>
                     </div>
                 </div>
             </div>

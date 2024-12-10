@@ -22,13 +22,13 @@
                 $sql = "select * from servicios";
                 $exec = mysqli_query($con, $sql);
                 while($rows = mysqli_fetch_array($exec)){
-                ?>
+            ?>
                     <tr>
                         <td><?php echo $rows['nombre']; ?></td>
                         <td><?php echo $rows['precio']; ?></td>
                         <td><?php echo $rows['duracion']; ?></td>
                     </tr>            
-                <?php
+            <?php
                 }
             ?>
         </table>
