@@ -59,7 +59,7 @@
                 $execute = mysqli_query($con, $queryInsTot);
 
                 sleep(2);
-                header('Location: ' . asset_general("src/views/reservacion/createFormUser.php"));
+                header('Location: ' . asset_general("src/views/reservacion/consultaUser.php"));
 
             }catch (mysqli_sql_exception $e) {
                 $_SESSION['error'] = "Error: " . $e->getMessage();

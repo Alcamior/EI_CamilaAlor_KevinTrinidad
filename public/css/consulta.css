@@ -50,6 +50,15 @@ header a i:hover {
     text-align: center;
 }
 
+.tabla h4 {
+    margin-top: 30px;
+    text-align: end;
+    margin-right: 8.5rem;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 
 /*-----------------------> Formulario */
 

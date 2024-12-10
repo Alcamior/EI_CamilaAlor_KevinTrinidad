@@ -32,7 +32,7 @@
                     </p>
                     <div class="botones">
                         <a href="<?=asset_general('src/views/reservacion/createFormUser.php')?>">Hacer una nueva reservación</a>
-                        <a href="<?=asset_general('')?>">Ver mis citas</a>
+                        <a href="<?=asset_general('src/views/reservacion/consultaUser.php')?>">Ver mis citas</a>
                     </div>
                 </div>
             </div>
