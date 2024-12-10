@@ -21,9 +21,9 @@
             echo '<link rel="stylesheet" href="' . asset('css/login.css') . '">';
         }elseif($page === 'dashboardAdmin' || $page === 'dashboardUser') {
             echo '<link rel="stylesheet" href="' . asset('css/dashboard.css') . '">';
-        }elseif($page === 'createForm') {
+        }elseif($page === 'createForm' || $page === 'editForm') {
             echo '<link rel="stylesheet" href="' . asset('css/formulario.css') . '">';
-        }elseif($page === 'consultaUser') {
+        }elseif($page === 'consultaUser' || $page=='consultaAdmin') {
             echo '<link rel="stylesheet" href="' . asset('css/consulta.css') . '">';
         }
     ?>

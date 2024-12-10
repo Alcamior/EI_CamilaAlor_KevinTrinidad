@@ -5,6 +5,22 @@
     session_start(); 
     $usuario = $_SESSION['usuario']; 
 
+    if(isset($_GET['idS'])){
+        $id = $_GET['idS'];
+        $sql = "select * from servicios where idS = $id;";
+        $execute = mysqli_query($con, $sql);
+        if(mysqli_num_rows($execute)==1){
+            
+            $row = mysqli_fetch_array($execute);
+            $nombre = $row['nombre'];
+            $precio = $row['precio'];
+            $duracion = $row['duracion'];
+           
+        }
+    }else{
+        echo "No se ha recibido un ID";
+    }
+
     if(isset($usuario) && esAdmin($usuario)){
 ?>
 
@@ -17,12 +33,12 @@
             <div class="formulario col-md-6 col-sm-12">
                 <h6>Registra un nuevo servicio</h6>
 
-                <form method="POST" name="frmRes" id="frmRes" action="<?=asset_general('src/controllers/ServicioController/create.php') ?>">
+                <form method="POST" name="frmRes" id="frmRes" action="<?= asset_general('src/controllers/ServicioController/edit.php?idS=' . $id) ?>">
 
                     <div class="form_container">
                         <label class="formulario_label">Nombre del servicio:</label>
                         <br>
-                        <input type="" name="nombre" id="nombre">
+                        <input type="" name="nombre" id="nombre" value="<?php echo $nombre; ?>">
                         <br>
                         <p class="alert alert-danger" id="nom" name="nom" style="display: none;">
                             ¡Ingresa una nombre!
@@ -34,7 +50,7 @@
                     <div class="form_container">
                         <label class="formulario_label">Precio:</label>
                         <br>
-                        <input type="number" name="precio" id="precio">
+                        <input type="number" name="precio" id="precio" value="<?php echo $precio; ?>">
                         <br>
                         <p class="alert alert-danger" id="pre" name="pre" style="display: none;">
                             ¡Ingresa un precio válido!
@@ -46,7 +62,7 @@
                     <div class="form_container">
                         <label class="formulario_label">Duración (horas):</label>
                         <br>
-                        <input type="number" name="duracion" id="duracion">
+                        <input type="number" name="duracion" id="duracion" value="<?php echo $duracion; ?>">
                         <br>
                         <p class="alert alert-danger" id="dur" name="dur" style="display: none;">
                             ¡Ingresa una duración válida!
