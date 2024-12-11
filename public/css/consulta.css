@@ -30,6 +30,14 @@ header a i:hover {
 
 /*-----------------------> Tabla */
 
+body{
+    width: 100%;
+}
+
+.tabla{
+    overflow-x: auto;
+}
+
 .tabla, .formulario {
     background: radial-gradient(circle at top left, rgb(255, 228, 178),rgb(255, 171, 185),rgb(253, 122, 253));
     background-repeat: no-repeat;
@@ -124,3 +132,8 @@ header a i:hover {
 }
 
 
+@media screen and (max-width: 780px) {
+    h2{
+        text-align: center;
+    }
+}

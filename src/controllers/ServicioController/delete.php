@@ -4,6 +4,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/EI_CamilaAlor_KevinTrinidad/config/variabl
 <?php include '../../controllers/RolesController/roles.php'?>
 
 <?php
+
+    /*
+    Eliminar un servicio
+    Recibe: ID del servicio a eliminar
+    Devuelve: nada
+    */
+
     session_start();
     $usuario = $_SESSION['usuario']; 
     if (esAdmin($usuario)){

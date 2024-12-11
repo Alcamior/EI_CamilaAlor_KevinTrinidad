@@ -3,6 +3,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/EI_CamilaAlor_KevinTrinidad/config/variabl
 ?>
 
 <?php
+    /*
+    Editar un servicio
+    Recibe: ID del servicio a editar
+    Devuelve: nada
+    */
 
     session_start(); 
     $usuario = $_SESSION['usuario']; 

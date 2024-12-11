@@ -2,6 +2,12 @@
 
 <?php
 
+    /*
+    Insertar un nuevo  usuario
+    Recibe: nombre, usuario, apellido, correo, telefono y contraseña
+    Devuelve: nada
+    */
+
     $usuario = $_POST['usuario'];
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];

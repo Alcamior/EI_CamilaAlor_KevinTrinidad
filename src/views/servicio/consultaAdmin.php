@@ -8,7 +8,7 @@
 
     if(isset($usuario) && esAdmin($usuario)){
 ?>
-
+    
     <header class="row">
         <a class="col-md-4 col-sm-12" href="<?=asset_general('src/views/dashboard/dashboardAdmin.php')?>"><i class="bi bi-arrow-left-circle"></i></a>
         <h2 class="col-md-8 col-sm-12">Regresar</h2>

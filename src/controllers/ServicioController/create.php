@@ -3,6 +3,14 @@
 <?php include '../RolesController/roles.php';?>
 
 <?php 
+
+    /*
+    Insertar un nuevo servcio
+    Recibe: nombre, precio y duración del servicio
+    Devuelve: nada
+    */
+    
+
     session_start();
 
     $usuario = $_SESSION['usuario'];
