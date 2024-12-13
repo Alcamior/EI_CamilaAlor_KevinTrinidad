@@ -7,11 +7,8 @@
 
     $usuario = $_SESSION['usuario'];
     
-    if(esUser($usuario)){
+    if(esUser($usuario) && isset($usuario)){
 
-        $usuario = $_SESSION['usuario'];
-
-        if(isset($usuario)){
             try {
                 // Habilitar MySQLi para lanzar excepciones
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -67,10 +64,6 @@
                 header('Location: ' . asset_general("src/views/reservacion/createFormUser.php"));
                 exit();
             }
-
-        }else{
-            header('Location: ' . asset_general("src/views/login/login.php"));
-        }
     }else{
         header('Location: ' . asset_general("src/views/login/login.php"));
     }  
